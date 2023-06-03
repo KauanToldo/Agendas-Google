@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Tarefas</title>
+    <link rel="stylesheet" href="styles/tarefasCadastro.css">
+    <script src="scripts/tarefasCadastro.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 id="title">Tarefas</h1>
+        <h2 id="info-user"></h2>
+        <h3 id="carga-horaria">Sua carga horária é:<span> 0</span></h3>
+    </header>
+    <main>
+        <div id="container-tarefa">
+            <h1>Cadastrar Tarefa</h1>
+            <div id="inputs-tarefa">
+                <div>
+                    <label for="">Tarefa:</label>
+                    <input id="nome-tarefa" type="text" placeholder="Digite o nome da tarefa">
+                </div>
+                <div>
+                    <label for="">Dia da semana:</label>
+                    <select name="" id="dia-tarefa" required>
+                        <option value="Segunda">Segunda</option>
+                        <option value="Terça">Terça</option>
+                        <option value="Quarta">Quarta</option>
+                        <option value="Quinta">Quinta</option>
+                        <option value="Sexta">Sexta</option>
+                    </select>
+                </div>
+                <div>
+                    <div>
+                        <label for="">Inicio: </label>
+                        <input type="time" name="" id="hora-inicio">
+                    </div>
+                    <div>
+                        <label for="">Fim: </label>
+                        <input type="time" name="" id="hora-fim">
+                    </div>
+                </div>
+            </div>
+            <button id="add-tarefa">Adicionar Tarefa</button>
+        </div>
+        <section id="tarefas">
+            <h1>Lista de Tarefas</h1>
+        </section>
+    </main>
+</body>
+</html>
