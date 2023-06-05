@@ -3,7 +3,6 @@ let siape = localStorage.getItem("siape")
 let carga = localStorage.getItem("carga")
 document.querySelector("#info-user").innerHTML = `Bem vindo ${nome} - ${siape}`
 let contador = 0
-let tarefas = {}
 
 const listaTarefas = document.querySelector("#tarefas")
 const addBtn = document.querySelector("#add-tarefa")
